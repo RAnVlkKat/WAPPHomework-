@@ -1,0 +1,17 @@
+body {
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+search-form {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+button {
+  background-color: darkgreen;
+  color: white;
+  border-radius: 5px;
+}
+span {
+  font-size: 60px;
+  font-style: oblique;
+}
