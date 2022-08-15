@@ -6,11 +6,18 @@
 		<title>Weather App</title>
 		<link href="src/styles.css" rel="stylesheet" type="text/css" />
     <script src="src/index.js"></script>
+     <script src="src/app.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <span class="text-center">
     <form>
       <input
+        name="searchbox"
         type="text"
+        size="50"
         placeholder="Search for a city"
         autocomplete="off"
         autofocus="on"
@@ -20,25 +27,46 @@
     </form>
     <h1></h1>
     <form id="search-form">
-			<button>current</button>
-
-			<h1>Zagreb</h1>
-			<h2>Sunday 19:01</h2>
-			<h3>Clear</h3>
-			<h4>Humidity: 41%</h4>
-			<h5>Wind: 3km/h</h5>
-
-
-    
-    <p id="p1"></p>
-    <p id="p2"></p>
-   
-    	<div class="float-left">
-		<span class="temperature" id="temperature">20</span><span class="units">
-			<a href="#" id="celsius-link">°C</a> |
-			<a href="#" id="fahrenheit-link"'>°F</a>
-			<script src="src/index.js"></script>
-			</span>
+      <div class="overview">
+      <h1 id="city">Ivano-Frankivsk</h1>
+			<ul>
+              <li><span id="date"></span></li>
+              <li id="description"></li>
+      </ul>
+      </div>
+       <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+       <div class="float-left">
+        
+         <span class="temperature" id="temperature">20</span><span class="units">
+          <strong id="temperature"></strong>
+		       <a href="#" id="celsius-link">°C</a>
+			     
+			   </span>
+          </span>
+        </div>
+      </div>
 		</div>
+  </div>
+  
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+               
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   </body>
 </html>
