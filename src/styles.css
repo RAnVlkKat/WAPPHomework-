@@ -15,13 +15,14 @@ input {
 }
 
 span {
-  font-size: 30px;
+  font-size: 20px;
   font-style: oblique;
 }
 h1 {
   font-size: 30px;
   margin-top: 75px;
 }
+
 li {
   font-size: 16px;
 }
@@ -39,7 +40,7 @@ li {
 .float-left {
   text-align: right;
   margin-top: -200px;
-  padding-right: 550px;
+  padding-right: 450px;
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
